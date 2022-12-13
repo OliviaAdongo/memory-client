@@ -1,0 +1,36 @@
+.top {
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  color: white;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  font-family: "Pacifico", cursive;
+}
+.topleft {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-family: 'Pacifico', cursive;
+  /* background-color: peru; */
+}
+.topright {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  /* background-color: lightcoral; */
+}
+.topcenter {
+  flex: 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  /* background-color: mediumaquamarine; */
+}
