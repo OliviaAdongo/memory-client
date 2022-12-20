@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   font-family: "Pacifico", cursive;
+  z-index: 999;
 }
 .topleft {
   flex: 3;

@@ -1,15 +1,16 @@
-import Home from './Home/Home'
-
-import Topbar from './Topbar/Topbar'
+// import Home from './Home/Home'
+import Read from "./Read/Read";
+import Topbar from "./Topbar/Topbar";
+import "./App.css";
 
 function App() {
   return (
     <div>
-    <Topbar/>
-      <Home/>
-    {/* <Read/> */}
+      <Topbar />
+
+      <Read />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
