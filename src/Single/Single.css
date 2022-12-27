@@ -1,3 +1,29 @@
-.singlepost{
-    background-color: pink;
+.pinksingle{
+    /* background-color: pink; */
+    color: black;
+}
+.singlepostbroadimage{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 100%;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.sub{
+font-family: monospace;
+}
+.singlepostheading{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.content{
+    font-family: monospace;
+}
+.timepost{
+    font-family: monospace;
+    font-style: italic;
+    font-size: 30px;
 }

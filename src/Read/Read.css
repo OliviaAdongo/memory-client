@@ -3,17 +3,25 @@
   font-family: "Playfair Display", serif;
   font-size: 15px;
   text-align: center;
+  font-weight: bold;
 }
+
 .postparent{
   /* background-color: pink; */
+  /* width: 1000px; */
+  /* border-style: solid;
+  border-radius: 5px; */
+  /* border: 50px; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
+  /* margin-left: 40px;
+  margin-right: 40px; */
 }
 .post{
   width: 385px;
-  margin: 0px 25px 40px 25px;
+  margin: 10px 25px 40px 25px;
 }
 .postImage{
    width: 100%;
