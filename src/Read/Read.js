@@ -108,6 +108,7 @@ function Read() {
             lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
             ipsum lorem ipsum
           </p>
+          <DeleteOutline/> <Edit/> <KeyboardArrowRight onClick={()=>{ navigate('/singlepost')}}/>
         </div>
         <div className="post">
           <img
@@ -154,6 +155,7 @@ function Read() {
             lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
             ipsum lorem ipsum
           </p>
+          <DeleteOutline/> <Edit/> <KeyboardArrowRight onClick={()=>{ navigate('/singlepost')}}/>
         </div>
         <div className="post">
           <img
@@ -200,6 +202,7 @@ function Read() {
             lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
             ipsum lorem ipsum
           </p>
+          <DeleteOutline/> <Edit/> <KeyboardArrowRight onClick={()=>{ navigate('/singlepost')}}/>
         </div>
         <div className="post">
           <img
@@ -246,6 +249,7 @@ function Read() {
             lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
             ipsum lorem ipsum
           </p>
+          <DeleteOutline/> <Edit/> <KeyboardArrowRight onClick={()=>{ navigate('/singlepost')}}/>
         </div>
         <div className="post">
           <img
@@ -338,6 +342,7 @@ function Read() {
             lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
             ipsum lorem ipsum
           </p>
+          <DeleteOutline/> <Edit/> <KeyboardArrowRight onClick={()=>{ navigate('/singlepost')}}/>
         </div>
         <div className="post">
           <img
@@ -384,6 +389,7 @@ function Read() {
             lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
             ipsum lorem ipsum
           </p>
+          <DeleteOutline/> <Edit/> <KeyboardArrowRight onClick={()=>{ navigate('/singlepost')}}/>
         </div>
       </div>
     </div>
