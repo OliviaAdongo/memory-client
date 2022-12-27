@@ -48,9 +48,10 @@
     border-radius: 10px;
     cursor: pointer;
     font-size: 15px;
+    width: 100px;
 }
 .writeimage{
-   margin-left: 150px; 
+   margin-left: 250px; 
    width: 70vw;
    border-radius: 10px;
    object-fit: cover;

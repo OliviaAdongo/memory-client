@@ -1,0 +1,79 @@
+.profile {
+  padding: 25px;
+  width: 500px;
+  height: 400px;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  /* background-color: pink; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.catprofile {
+  height: 290px;
+  width: 280px;
+  border-radius: 50%;
+}
+.profilelabels {
+  padding: 7px;
+  margin-top: 20px;
+  border-radius: 10px;
+  /* background-color: white; */
+  height: 40px;
+}
+.profilecontent {
+  margin-left: 40px;
+  /* background-color: pink; */
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.logoutbutton {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+/* CSS */
+.button-31 {
+  margin-top: 20px;
+  background-color: #222;
+  border-radius: 10px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Farfetch Basis", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  max-width: none;
+  min-height: 44px;
+  min-width: 10px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 20px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+.button-31:hover,
+.button-31:focus {
+  opacity: 0.75;
+}
