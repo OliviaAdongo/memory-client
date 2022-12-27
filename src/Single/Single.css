@@ -1,6 +1,8 @@
 .pinksingle{
     /* background-color: pink; */
+    margin-left: 50px;
     color: black;
+    margin-right: 50px;
 }
 .singlepostbroadimage{
     margin-top: 20px;
@@ -8,22 +10,30 @@
     justify-content: center;
     align-items: center;
     width: 400px;
-    height: 100%;
+    object-fit: cover;
+    /* height: 100%; */
     border-radius: 20px;
     margin-right: 20px;
-    margin-left: 20px;
+    margin-left: 500px;
+    
 }
 .sub{
 font-family: monospace;
+font-style: italic;
+color: peru;
+font-size: 15px;
 }
 .singlepostheading{
+    margin-top: 20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .content{
     font-family: monospace;
+    
 }
 .timepost{
     font-family: monospace;
     font-style: italic;
-    font-size: 30px;
+    font-size: 10px;
+    width: 400px;
 }

@@ -1,4 +1,3 @@
-import { Mood } from "@material-ui/icons";
 import "./Profile.css";
 
 function Profile() {
@@ -13,7 +12,7 @@ function Profile() {
 <br/>
         
         
-<button class="button-31" role="button">LOGOUT</button>
+<button class="button-31">LOGOUT</button>
 
 
       </div>

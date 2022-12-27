@@ -1,4 +1,3 @@
-import { DeleteOutline, Edit, KeyboardArrowRight } from "@material-ui/icons";
 import React from "react";
 import "./Read.css";
 import { useNavigate } from 'react-router-dom';
@@ -60,7 +59,7 @@ function Read() {
             lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
             ipsum lorem ipsum
           </p>
-          <DeleteOutline/> <Edit/> <KeyboardArrowRight onClick={()=>{ navigate('/singlepost')}}/>
+          <h5 className="readmore" onClick={()=>{ navigate('/singlepost')}}>READ MORE</h5> 
         </div>
         
         <div className="post">
@@ -108,7 +107,7 @@ function Read() {
             lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
             ipsum lorem ipsum
           </p>
-          <DeleteOutline/> <Edit/> <KeyboardArrowRight onClick={()=>{ navigate('/singlepost')}}/>
+          <h5 className="readmore" onClick={()=>{ navigate('/singlepost')}}>READ MORE</h5>  
         </div>
         <div className="post">
           <img
@@ -155,7 +154,7 @@ function Read() {
             lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
             ipsum lorem ipsum
           </p>
-          <DeleteOutline/> <Edit/> <KeyboardArrowRight onClick={()=>{ navigate('/singlepost')}}/>
+          <h5 className="readmore" onClick={()=>{ navigate('/singlepost')}}>READ MORE</h5> 
         </div>
         <div className="post">
           <img
@@ -202,7 +201,7 @@ function Read() {
             lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
             ipsum lorem ipsum
           </p>
-          <DeleteOutline/> <Edit/> <KeyboardArrowRight onClick={()=>{ navigate('/singlepost')}}/>
+          <h5 className="readmore" onClick={()=>{ navigate('/singlepost')}}>READ MORE</h5> 
         </div>
         <div className="post">
           <img
@@ -249,7 +248,7 @@ function Read() {
             lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
             ipsum lorem ipsum
           </p>
-          <DeleteOutline/> <Edit/> <KeyboardArrowRight onClick={()=>{ navigate('/singlepost')}}/>
+          <h5 className="readmore" onClick={()=>{ navigate('/singlepost')}}>READ MORE</h5> 
         </div>
         <div className="post">
           <img
@@ -296,6 +295,7 @@ function Read() {
             lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
             ipsum lorem ipsum
           </p>
+          <h5 className="readmore" onClick={()=>{ navigate('/singlepost')}}>READ MORE</h5> 
         </div>
         <div className="post">
           <img
@@ -342,7 +342,7 @@ function Read() {
             lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
             ipsum lorem ipsum
           </p>
-          <DeleteOutline/> <Edit/> <KeyboardArrowRight onClick={()=>{ navigate('/singlepost')}}/>
+          <h5 className="readmore" onClick={()=>{ navigate('/singlepost')}}>READ MORE</h5> 
         </div>
         <div className="post">
           <img
@@ -389,7 +389,7 @@ function Read() {
             lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
             ipsum lorem ipsum
           </p>
-          <DeleteOutline/> <Edit/> <KeyboardArrowRight onClick={()=>{ navigate('/singlepost')}}/>
+          <h5 className="readmore" onClick={()=>{ navigate('/singlepost')}}>READ MORE</h5> 
         </div>
       </div>
     </div>

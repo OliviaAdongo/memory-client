@@ -33,5 +33,9 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  color: white;
   /* background-color: mediumaquamarine; */
+}
+.navwords{
+  font-family: 'Pacifico', cursive;
 }

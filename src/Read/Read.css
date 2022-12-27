@@ -66,3 +66,7 @@
    -webkit-line-clamp: 4;
    -webkit-box-orient: vertical;
 }
+.readmore{
+   margin-top: 20px;
+   color: darkslategrey;
+}

@@ -1,19 +1,20 @@
-import { AddAPhotoTwoTone } from "@material-ui/icons";
+import { useNavigate } from 'react-router-dom';
 import "./Write.css";
 
 function Write() {
+  let navigate = useNavigate();
   return (
     <div className="write">
     <img
     className="writeimage"
       src="https://i.pinimg.com/originals/60/89/9d/60899d37341bbd713759b282894a43bd.gif"
-      alt="image added from the folder"
+      alt="file added from the folder"
     />
 
       <form className="writeform">
         <div className="writeformgroup">
           <label htmlFor="fileinput">
-            <AddAPhotoTwoTone className="writeicon" />
+            {/* <AddAPhotoTwoTone className="writeicon" /> */}
           </label>
           <input type="file" id="fileinput" style={{ display: "none" }} />
           <input
@@ -30,7 +31,7 @@ function Write() {
             className="writeinput writetext"
           ></textarea>
         </div>
-        <button   className="writesubmit">Publish</button>
+        <button   className="writesubmit" onClick={()=>{ navigate('/read')}} >Publish</button>
       </form>
     </div>
   );

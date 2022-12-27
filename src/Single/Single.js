@@ -1,4 +1,3 @@
-import { KeyboardArrowLeft } from '@material-ui/icons'
 import './Single.css'
 import { useNavigate } from 'react-router-dom';
 
@@ -51,7 +50,7 @@ function Single() {
             lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
             ipsum lorem ipsum
           </p>
-          <KeyboardArrowLeft onClick={()=>{ navigate('/read')}}/> Back
+          <p className='readmore' onClick={()=>{ navigate('/read')}}> Back </p>
          
         </div>
     </div>
