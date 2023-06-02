@@ -1,9 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Read.css";
-import { useNavigate } from 'react-router-dom';
-
+import { useNavigate } from "react-router-dom";
+import { db } from "../firebase-config";
+import { collection, getDocs, updateDoc,  doc } from "firebase/firestore";
 
 function Read() {
+  const [posts, setPosts] = useState([]);
+  const postCollectionRef = collection(db, "diary");
+
+
+  const updatePost  = async (id, post)  =>{
+    const postDoc = doc(db, "diary", id)
+    const newFields =  {post:  post}
+    await updateDoc( postDoc ,newFields)
+
+  }
+
+
+
+  useEffect(() => {
+    const getPosts = async () => {
+      const data = await getDocs(postCollectionRef);
+      setPosts(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+    };
+
+    getPosts();
+  }, []);
+
   let navigate = useNavigate();
   return (
     <div className="postparentmain1">
@@ -13,6 +36,17 @@ function Read() {
           words to test the appearance.
         </h5>
       </section>
+      <div>
+        {posts.map((post) => {
+          return (
+            <div>
+              <h1>Title: {post.title}</h1>
+              <h4>Post: {post.post}</h4>
+              <button onClick={updatePost(post.id, post.post)}>Edit</button>
+            </div>
+          );
+        })}
+      </div>
       <div className="postparent">
         <div className="post">
           <img
@@ -59,9 +93,16 @@ function Read() {
             lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
             ipsum lorem ipsum
           </p>
-          <h5 className="readmore" onClick={()=>{ navigate('/singlepost')}}>READ MORE</h5> 
+          <h5
+            className="readmore"
+            onClick={() => {
+              navigate("/singlepost");
+            }}
+          >
+            READ MORE
+          </h5>
         </div>
-        
+
         <div className="post">
           <img
             className="postImage"
@@ -107,7 +148,14 @@ function Read() {
             lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
             ipsum lorem ipsum
           </p>
-          <h5 className="readmore" onClick={()=>{ navigate('/singlepost')}}>READ MORE</h5>  
+          <h5
+            className="readmore"
+            onClick={() => {
+              navigate("/singlepost");
+            }}
+          >
+            READ MORE
+          </h5>
         </div>
         <div className="post">
           <img
@@ -154,7 +202,14 @@ function Read() {
             lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
             ipsum lorem ipsum
           </p>
-          <h5 className="readmore" onClick={()=>{ navigate('/singlepost')}}>READ MORE</h5> 
+          <h5
+            className="readmore"
+            onClick={() => {
+              navigate("/singlepost");
+            }}
+          >
+            READ MORE
+          </h5>
         </div>
         <div className="post">
           <img
@@ -201,7 +256,14 @@ function Read() {
             lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
             ipsum lorem ipsum
           </p>
-          <h5 className="readmore" onClick={()=>{ navigate('/singlepost')}}>READ MORE</h5> 
+          <h5
+            className="readmore"
+            onClick={() => {
+              navigate("/singlepost");
+            }}
+          >
+            READ MORE
+          </h5>
         </div>
         <div className="post">
           <img
@@ -248,7 +310,14 @@ function Read() {
             lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
             ipsum lorem ipsum
           </p>
-          <h5 className="readmore" onClick={()=>{ navigate('/singlepost')}}>READ MORE</h5> 
+          <h5
+            className="readmore"
+            onClick={() => {
+              navigate("/singlepost");
+            }}
+          >
+            READ MORE
+          </h5>
         </div>
         <div className="post">
           <img
@@ -295,7 +364,14 @@ function Read() {
             lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
             ipsum lorem ipsum
           </p>
-          <h5 className="readmore" onClick={()=>{ navigate('/singlepost')}}>READ MORE</h5> 
+          <h5
+            className="readmore"
+            onClick={() => {
+              navigate("/singlepost");
+            }}
+          >
+            READ MORE
+          </h5>
         </div>
         <div className="post">
           <img
@@ -342,7 +418,14 @@ function Read() {
             lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
             ipsum lorem ipsum
           </p>
-          <h5 className="readmore" onClick={()=>{ navigate('/singlepost')}}>READ MORE</h5> 
+          <h5
+            className="readmore"
+            onClick={() => {
+              navigate("/singlepost");
+            }}
+          >
+            READ MORE
+          </h5>
         </div>
         <div className="post">
           <img
@@ -389,7 +472,14 @@ function Read() {
             lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
             ipsum lorem ipsum
           </p>
-          <h5 className="readmore" onClick={()=>{ navigate('/singlepost')}}>READ MORE</h5> 
+          <h5
+            className="readmore"
+            onClick={() => {
+              navigate("/singlepost");
+            }}
+          >
+            READ MORE
+          </h5>
         </div>
       </div>
     </div>
